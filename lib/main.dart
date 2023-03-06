@@ -1,3 +1,4 @@
+import 'package:campus_ease/loginScreens/login1.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,13 +8,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: SafeArea(
-          child: Center(child: Text("Landing Page will be here. ")),
-        ),
-      )
-    );
+    return  MaterialApp(
+      home: LoginScreenOne(),
+      );
   }
 }
 
