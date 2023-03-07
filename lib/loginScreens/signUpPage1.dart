@@ -93,7 +93,6 @@ class _SignUpPage1State extends State<SignUpPage1> {
               )),
               // Name please , lets network and grow
 
-              //Todo:  input box for entering the name
             ],
           ),
         ),

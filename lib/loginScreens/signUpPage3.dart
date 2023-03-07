@@ -1,3 +1,4 @@
+import 'package:campus_ease/HomeScreen.dart';
 import 'package:flutter/material.dart';
 
 class SignUpPage3 extends StatefulWidget {
@@ -9,6 +10,7 @@ class _SignUpPage3State extends State<SignUpPage3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
@@ -45,7 +47,6 @@ class _SignUpPage3State extends State<SignUpPage3> {
                   height: 53,
                 ),
 
-                //Todo:  input box for entering the name
                 Container(
                   height: 40,
                   // decoration: BoxDecoration(
@@ -73,7 +74,7 @@ class _SignUpPage3State extends State<SignUpPage3> {
 
                 GestureDetector(
                   onTap: (){
-                    // Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginScreenThree()));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
                   },
                   child: Container(
                     height: 50,
