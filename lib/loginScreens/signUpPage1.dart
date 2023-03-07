@@ -1,15 +1,16 @@
 import 'package:campus_ease/loginScreens/signUpPage2.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreenTwo extends StatefulWidget {
+class SignUpPage1 extends StatefulWidget {
   @override
-  State<LoginScreenTwo> createState() => _LoginScreenTwoState();
+  State<SignUpPage1> createState() => _SignUpPage1State();
 }
 
-class _LoginScreenTwoState extends State<LoginScreenTwo> {
+class _SignUpPage1State extends State<SignUpPage1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
@@ -20,13 +21,15 @@ class _LoginScreenTwoState extends State<LoginScreenTwo> {
               // progress bar
               Expanded(
                 flex: 1,
-                  child: Container(
-                      child: Center(
-                          child: LinearProgressIndicator(
+                  child: Hero(
+                    tag: "progressSlider",
+                    child: Center(
+                        child: LinearProgressIndicator(
                 valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
                 backgroundColor: Color(0xffC4C4C4),
                 value: 0.2,
-              )))),
+              )),
+                  )),
 
               Expanded(
                 flex: 6,
@@ -72,7 +75,7 @@ class _LoginScreenTwoState extends State<LoginScreenTwo> {
                   GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => LoginScreenThree()));
+                          builder: (context) => SignUpPage2()));
                     },
                     child: Container(
                       height: 50,

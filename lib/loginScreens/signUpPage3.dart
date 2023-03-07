@@ -1,12 +1,11 @@
-import 'package:campus_ease/loginScreens/signUpPage2.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreenFour extends StatefulWidget {
+class SignUpPage3 extends StatefulWidget {
   @override
-  State<LoginScreenFour> createState() => _LoginScreenFourState();
+  State<SignUpPage3> createState() => _SignUpPage3State();
 }
 
-class _LoginScreenFourState extends State<LoginScreenFour> {
+class _SignUpPage3State extends State<SignUpPage3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,13 +19,15 @@ class _LoginScreenFourState extends State<LoginScreenFour> {
               // progress bar
               Expanded(
                 child: Expanded(
-                    child: Container(
-                        child: Center(
-                            child: LinearProgressIndicator(
-                              valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
-                              backgroundColor: Color(0xffC4C4C4),
-                              value: 0.6,
-                            )))),
+                    child: Hero(
+                      tag: "progressSlider",
+                      child: Center(
+                          child: LinearProgressIndicator(
+                            valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
+                            backgroundColor: Color(0xffC4C4C4),
+                            value: 0.6,
+                          )),
+                    )),
               ),
 
               Expanded(
@@ -58,7 +59,7 @@ class _LoginScreenFourState extends State<LoginScreenFour> {
                           border: OutlineInputBorder(
                               borderSide: BorderSide.none,
                               borderRadius: BorderRadius.circular(10)),
-                          hintText: 'Enter Your Name'),
+                          hintText: 'Select Your Course'),
                     ),
                   ),
                 ),
