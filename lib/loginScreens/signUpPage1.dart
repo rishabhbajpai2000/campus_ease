@@ -48,9 +48,6 @@ class _SignUpPage1State extends State<SignUpPage1> {
                   ),
                   Container(
                     height: 40,
-                    // decoration: BoxDecoration(
-                    //     color: Color(0xFFFFBD9D),
-                    //     borderRadius: BorderRadius.all(Radius.circular(10))),
                     child: Center(
                       child: TextField(
                         decoration: InputDecoration(

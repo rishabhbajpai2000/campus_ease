@@ -1,3 +1,4 @@
+import 'package:campus_ease/loginScreens/LoginPage.dart';
 import 'package:campus_ease/loginScreens/signUpPage1.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -72,11 +73,17 @@ class _loginScreenOneState extends State<WelcomeScreen> {
               // login button
               Expanded(
                 flex: 1,
-                child: Container(
-                  decoration: BoxDecoration(
-                      color: Color(0xFF92DCEC),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  child: Center(child: Text("LOGIN")),
+                child: GestureDetector(
+                  onTap: (){
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => LoginScreen()));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Color(0xFF92DCEC),
+                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    child: Center(child: Text("LOGIN")),
+                  ),
                 ),
               ),
             ],
