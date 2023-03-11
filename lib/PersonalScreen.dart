@@ -1,6 +1,9 @@
+import 'package:campus_ease/PersonalServices/BrokerConnect.dart';
+import 'package:campus_ease/PersonalServices/CabShare.dart';
+import 'package:campus_ease/PersonalServices/FoodFinder.dart';
+import 'package:campus_ease/PersonalServices/RentRight.dart';
 import 'package:flutter/material.dart';
 
-import 'AcademicScreen.dart';
 import 'buttons.dart';
 class PersonalScreen extends StatefulWidget {
   const PersonalScreen({Key? key}) : super(key: key);
@@ -43,22 +46,22 @@ class _PersonalScreenState extends State<PersonalScreen> {
               selectionButton(heading1: "Food Finder", heading2: "Find the best food near by!", shade: Color(0xffF7D972), context: context,
                   onClickAction: () => {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => AcademicScreen()))
+                        builder: (context) => FoodFinder()))
                   }),
               selectionButton(heading1: "Rent Right", heading2: "Find affordable PG’s , Flats and hostels nearby", shade: Color(0xffF7D972),context: context,
                   onClickAction: () => {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => AcademicScreen()))
+                        builder: (context) => RentRight()))
                   } ),
               selectionButton(heading1: "Broker Connect", heading2: "Direct and hassle free contact to Brokers ", shade: Color(0xffF7D972), context: context,
                   onClickAction: () => {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => AcademicScreen()))
+                        builder: (context) => BrokerConnect()))
                   }),
               selectionButton(heading1: "Cab Share", heading2: "Share cabs and split the bills.", shade: Color(0xffF7D972), context: context,
                   onClickAction: () => {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => AcademicScreen()))
+                        builder: (context) => CabShare()))
                   }),
             ],
           ),
