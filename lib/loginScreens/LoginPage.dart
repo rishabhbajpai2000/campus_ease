@@ -39,6 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),),
                 ),
               ),
+              // enter email box
               Container(
                 height: 40,
                 child: Center(
@@ -62,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: TextStyle(fontSize: 18),),
                 ),
               ),
-
+              // enter password box
               Container(
                 height: 40,
                 child: Center(

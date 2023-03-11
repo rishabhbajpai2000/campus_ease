@@ -1,4 +1,4 @@
-import 'package:campus_ease/loginScreens/signUpPage3.dart';
+import 'package:campus_ease/loginScreens/signUpPage2_1.dart';
 import 'package:flutter/material.dart';
 
 class SignUpPage2 extends StatefulWidget {
@@ -86,7 +86,7 @@ class _SignUpPage2State extends State<SignUpPage2> {
                       GestureDetector(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => SignUpPage3()));
+                              builder: (context) => SignUpPage2_1()));
                         },
                         child: Container(
                           height: 50,
