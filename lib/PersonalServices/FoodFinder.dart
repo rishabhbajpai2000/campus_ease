@@ -34,7 +34,7 @@ class _FoodFinderState extends State<FoodFinder> {
                     itemCount: restaurantData.length,
                     itemBuilder: (context, index) {
                       return Container(
-                        height: 400,
+                        height: 500,
                         width: double.infinity,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
