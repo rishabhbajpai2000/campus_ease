@@ -74,7 +74,7 @@ class _SignUpPage2State extends State<SignUpPage2> {
 
                       // Middle image of the page.
                       Image.asset(
-                          "assets/images/loginscreen/loginscreen2image.png"),
+                          "assets/images/loginscreen/SignUpPage2Image.png"),
 
                       // space between image and next button
                       Expanded(

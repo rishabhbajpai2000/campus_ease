@@ -1,4 +1,4 @@
-import 'package:campus_ease/HomeScreen.dart';
+import 'package:campus_ease/loginScreens/signUpPage4.dart';
 import 'package:flutter/material.dart';
 
 class SignUpPage3 extends StatefulWidget {
@@ -67,14 +67,14 @@ class _SignUpPage3State extends State<SignUpPage3> {
                 // space between name box and photo
 
                 // Middle image of the page.
-                Image.asset("assets/images/loginscreen/loginscreen3image.png"),
+                Image.asset("assets/images/loginscreen/SignUpPage3Image.png"),
                 Expanded(
                   child: Container(),
                 ),
 
                 GestureDetector(
                   onTap: (){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUpPage4()));
                   },
                   child: Container(
                     height: 50,

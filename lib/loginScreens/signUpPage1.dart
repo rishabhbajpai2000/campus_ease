@@ -67,7 +67,7 @@ class _SignUpPage1State extends State<SignUpPage1> {
 
                   // Middle image of the page.
                   Image.asset(
-                      "assets/images/loginscreen/loginscreen1image.png"),
+                      "assets/images/loginscreen/SignUpPage1Image.png"),
                   Expanded(
                     child: Container(),
                   ),
